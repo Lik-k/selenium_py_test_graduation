@@ -1,6 +1,6 @@
+from selenium.webdriver.chrome.options import Options
 import pytest
 from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
 
 
 def pytest_addoption(parser):
@@ -18,3 +18,10 @@ def browser(request):
     yield browser
     print("\nquit browser..")
     browser.quit()
+
+# def browser(request):
+#     browser = webdriver.Chrome
+#     print("\nstart browser")
+#     yield browser
+#     print("\nquit browser..")
+#     browser.quit()
