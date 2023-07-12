@@ -12,7 +12,6 @@ class LoginPageLocators:
 
 
 class ProductPageLocators:
-    LINK_PRODUCT_PAGE = "http://selenium1py.pythonanywhere.com/catalogue/the-shellcoders-handbook_209/?promo=newYear"
     BTN_ADD_TO_BASKET = (By.CSS_SELECTOR, ".btn-add-to-basket")
     PRODUCT_NAME = (By.CSS_SELECTOR, "div.product_main h1")
     MESSAGE_PRODUCT_HAS_BEEN_ADDED = (By.XPATH, "//div[1]/div[@class='alertinner ']")

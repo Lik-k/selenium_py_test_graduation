@@ -8,13 +8,6 @@ class ProductPage(BasePage):
         bnt = self.browser.find_element(*ProductPageLocators.BTN_ADD_TO_BASKET)
         bnt.click()
 
-    def should_be_product_url(self):
-        link = ProductPageLocators.LINK_PRODUCT_PAGE
-        assert "?promo=newYear" in link, f"expected '{'?promo=newYear'}' to be substring of '{link}'"
-
-    def should_be_product_btn_on_basket(self):
-        assert ProductPageLocators.BTN_ADD_TO_BASKET, "Btn on basket is not presented"
-
     def should_be_add_product_on_basket(self):
         # Сначала проверяем, что элементы присутствуют на странице
         assert self.is_element_present(*ProductPageLocators.PRODUCT_NAME), (
