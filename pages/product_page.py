@@ -1,3 +1,5 @@
+import pytest
+
 from .locators import ProductPageLocators
 from .base_page import BasePage
 
@@ -20,7 +22,7 @@ class ProductPage(BasePage):
         # Проверяем, что название товара присутствует в сообщении о добавлении
         # Это можно было бы сделать с помощью split() и сравнения строк,
         # Но не вижу необходимости усложнять код
-        assert product_name in message, "No product name in the message"
+        assert product_name == message, "No product name in the message"
 
 
     def should_be_price(self):
