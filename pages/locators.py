@@ -17,3 +17,8 @@ class ProductPageLocators:
     MESSAGE_PRODUCT_HAS_BEEN_ADDED = (By.XPATH, "//div[1]/div[@class='alertinner ']/strong")
     MESSAGE_PRICE = (By.XPATH, "//div[3]/div[@class='alertinner ']/p/strong")
     PRICE_PRODUCT = (By.XPATH, "//div[contains(@class, 'product_main')]/p[@class='price_color']")
+
+
+class BasePageLocators:
+    LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
+    LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
